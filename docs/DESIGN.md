@@ -35,7 +35,7 @@ phase. They are separate axes and now have separate vocabularies:
 | Axis | Term | Meaning |
 |---|---|---|
 | What the system *does to a project* | **Pipeline Stage 0–5** | Interview → Decompose → Gate → Build → Integrate → Certify |
-| What *we implement*, in order | **Milestone M0–M9** | Our own build order (§10) |
+| What *we implement*, in order | **Milestone M0–M14** | Our own build order (§10) |
 
 Never say "stage" for our build work; never say "milestone" for pipeline phases.
 
