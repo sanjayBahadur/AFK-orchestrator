@@ -1,0 +1,26 @@
+{
+  "name": "afk-orchestrator",
+  "version": "0.1.0",
+  "description": "AFK Orchestrator: reusable, project-agnostic AI-agent build pipeline driving OpenCode Go workers, with Claude as the planning/orchestration interface.",
+  "module": "src/cli.ts",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "cc": "src/cli.ts"
+  },
+  "scripts": {
+    "cc": "bun run src/cli.ts",
+    "build": "bun build --compile --minify --outfile dist/cc src/cli.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@opencode-ai/sdk": "^1.18.15",
+    "yaml": "^2.9.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
