@@ -887,3 +887,28 @@ Consolidated. Every row's response is *stop and surface*, never *proceed*.
   quarantined and gate 3 becomes decorative. Watch the quarantined-path count as
   a health metric at M14; if it is not shrinking across chunks, the proposed
   boundaries are wrong and the target architecture needs another pass.
+
+---
+
+## 14. Halt record — 2026-08-08
+
+**This project is halted at design-complete.** The architecture above is frozen
+and considered final; implementation stands at M0 of 14 (§10). Nothing in this
+document is provisional or awaiting a decision — the open items are listed in
+§12 (deferred) and §13 (risks), and both are deliberate.
+
+**Why halted, not abandoned.** Attention moved to shipping a frontend against
+the predecessor backend for a scheduled demo. This design is worth more frozen
+and legible than half-implemented: the expensive artifact here is the *thinking*
+— the two enforcement mechanisms, the six gates, the seven invariants, and the
+break-case register — not the TypeScript that would carry it.
+
+**Resuming.** Start at M0 (§10) and go in order. `CLAUDE.md` is the short-form
+working agreement; read it before writing code. The build order is deliberate:
+M1–M5 and M11 involve no model calls at all, so the deterministic spine can be
+proven correct before any inference is introduced.
+
+**Two obligations carried forward**, written into the milestones rather than
+left as intentions — measure the Chunk Master relay ratio (§8.5) and the real
+escalation rate (§9.2) before spending money on either an extra coordination
+node or a metered LLM arbiter.
